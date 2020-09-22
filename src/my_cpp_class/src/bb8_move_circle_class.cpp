@@ -42,7 +42,7 @@ public:
     int i = 0;
     while (i < req.duration) {
       move_in_circle();
-      usleep(1000000); // We set 1000000 because the time is set in microseconds
+      usleep(1000000); //Time in microsecond. Used to convert duration int into seconds
       i++;
     }
     stop();
